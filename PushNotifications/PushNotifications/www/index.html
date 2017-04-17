@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>PushNotifications</title>
+</head>
+<body>
+    <div id='wrapper'>
+        <article>
+            <header>
+                <h2>Azure</h2>
+                <h1>Mobile Apps</h1>
+
+                <form id='add-item'>
+                    <button type='button' id='refresh'>Refresh</button>
+                    <button type='submit'>Add</button>
+                    <div><input type='text' id='new-item-text' placeholder='Enter new task' /></div>
+                </form>
+            </header>
+
+            <ul id='todo-items'></ul>
+            <p id='summary'>Initializing...</p>
+        </article>
+
+        <footer>
+            <ul id='errorlog'></ul>
+        </footer>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/plarformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+</body>
+</html>

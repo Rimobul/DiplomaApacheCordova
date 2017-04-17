@@ -1,0 +1,21 @@
+{
+  "android": {
+    "release": {
+      "keystore": "",
+      "storePassword": "",
+      "alias": "",
+      "password": "",
+      "keystoreType": ""
+    }
+  },
+  "windows": {
+    "release": {
+      "packageCertificateKeyFile": "res\\native\\windows\\CordovaApp.pfx",
+      "publisherId": "CN=01A9DFC3-C6B8-46BB-BCC6-2DBD4B47026B"
+    },
+    "debug": {
+      "packageCertificateKeyFile": "res\\native\\windows\\CordovaApp.pfx",
+      "publisherId": "CN=01A9DFC3-C6B8-46BB-BCC6-2DBD4B47026B"
+    }
+  }
+}
